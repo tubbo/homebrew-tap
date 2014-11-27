@@ -1,11 +1,18 @@
-# Brewery
+# tubbo's homebrew tap
 
-This is the Brewery, a collection of [Homebrew](http://brew.sh) formulae that I've
-either collected over the years or added myself for installing my own
-software.
+A collection of [Homebrew][brew] formulae that I've either collected
+over the years or added myself for installing my own software.
 
-To use, run the following command:
+To use it, run the following command:
 
 ```bash
-$ brew tap tubbo/brewery
+$ brew tap tubbo/tap
+```
+
+Now you'll be able to use formulae in this repo with Homebrew:
+
+```bash
+$ brew install homer
+$ brew install rails-template
+$ brew install macvim_drawer
 ```
