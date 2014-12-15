@@ -11,6 +11,7 @@ class Homer < Formula
   depends_on 'chruby'
   depends_on 'ruby-install'
   depends_on 'zsh'
+  depends_on 'antigen'
 
   def install
     system "make", "install", "PREFIX=#{prefix}"
