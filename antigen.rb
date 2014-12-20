@@ -22,12 +22,12 @@ class Antigen < Formula
 
     Add the following to your ~/.zshenv to start using Antigen:
 
-       source /usr/local/lib/antigen.zsh
+       source /usr/local/share/antigen.zsh
 
   TXT
   end
 
   test do
-    system "source #{prefix}/lib/antigen.zsh"
+    system "source #{prefix}/share/antigen.zsh"
   end
 end
