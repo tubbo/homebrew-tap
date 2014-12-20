@@ -3,7 +3,7 @@ require "formula"
 class RailsTemplate < Formula
   homepage "https://github.com/tubbo/rails-template"
   url "https://github.com/tubbo/rails-template/archive/v1.1.0.tar.gz"
-  sha1 "f82ae8c05c5a09f39bf2564eef56ed9bbafc2ee4"
+  sha1 "b478541c733e1bd108c83156d27a26629969b4a9"
 
   def install
     system 'make'
