@@ -7,7 +7,11 @@ class RailsTemplate < Formula
 
   def install
     system 'make'
-    system "ln -s #{prefix}/etc/railsrc /etc/railsrc"
+    system ""
+  end
+
+  def caveats
+    "Type the following to make it work: sudo ln -s #{prefix}/etc/railsrc /etc/railsrc"
   end
 
   test do
