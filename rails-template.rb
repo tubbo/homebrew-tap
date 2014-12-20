@@ -6,7 +6,9 @@ class RailsTemplate < Formula
   sha1 "b478541c733e1bd108c83156d27a26629969b4a9"
 
   def install
+    system "rm /etc/railsrc"
     system 'make'
+    system "ln -s #{prefix}/etc/railsrc /etc/railsrc"
   end
 
   test do
