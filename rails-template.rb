@@ -1,20 +1,26 @@
-require "formula"
+require 'formula'
 
+# Installs my Rails application template.
 class RailsTemplate < Formula
-  homepage "https://github.com/tubbo/rails-template"
-  url "https://github.com/tubbo/rails-template/archive/v1.1.0.tar.gz"
-  sha1 "b478541c733e1bd108c83156d27a26629969b4a9"
+  homepage 'https://github.com/tubbo/rails-template'
+  url 'https://github.com/tubbo/rails-template/archive/v1.1.1.tar.gz'
+  sha1 '4059a0bb460d4bb8608ef87a367f428cf22a1882'
 
   def install
     system 'make'
-    system ""
   end
 
   def caveats
-    "Type the following to make it work: sudo ln -s #{prefix}/etc/railsrc /etc/railsrc"
+    "To activate, run the following command:\n\t#{symlink_command}"
   end
 
   test do
-    system "ls /usr/local/share/rails-template/rails-template.rb", "ls /usr/local/share/rails-template/templates"
+    system 'ls /usr/local/share/rails-template/rails-template.rb'
+  end
+
+  private
+
+  def symlink_command
+    "sudo ln -s #{prefix}/etc/railsrc /etc/railsrc"
   end
 end
