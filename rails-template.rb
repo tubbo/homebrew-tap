@@ -15,7 +15,7 @@ class RailsTemplate < Formula
     %{
       To finish installation, run the following command:
 
-        sudo ln -s /usr/local/etc/ $HOME/.railsrc
+        sudo ln -s /usr/local/etc/railsrc $HOME/.railsrc
 
       Then run `rails new` to start a new rails app!
      }
