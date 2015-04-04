@@ -11,17 +11,7 @@ class RailsTemplate < Formula
     system 'make'
   end
 
-  def caveats
-    "To activate, run the following command:\n\t#{symlink_command}"
-  end
-
   test do
     system 'ls /usr/local/share/rails-template/rails-template.rb'
-  end
-
-  private
-
-  def symlink_command
-    "sudo ln -s #{prefix}/etc/railsrc /etc/railsrc"
   end
 end
