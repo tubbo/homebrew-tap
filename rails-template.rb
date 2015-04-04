@@ -4,7 +4,7 @@ require 'formula'
 class RailsTemplate < Formula
   homepage 'https://github.com/tubbo/rails-template'
   url 'https://github.com/tubbo/rails-template/archive/v1.1.2.tar.gz'
-  sha1 'fa002063d54856c9f18b1495a9bc77639333c42e'
+  sha1 'd6f1e263b74c929cece5dd29babf7a2bb7114a6a'
   head 'https://github.com/tubbo/rails-template.git'
 
   def install
