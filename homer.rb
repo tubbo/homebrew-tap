@@ -4,7 +4,7 @@ require 'formula'
 class Homer < Formula
   homepage 'https://github.com/tubbo/homer'
   url 'https://github.com/tubbo/homer/archive/v0.0.4.tar.gz'
-  sha1 '7e9e4dbc5131a32f46964aee02b5156990d710ea'
+  sha1 '930f04a63e00fa07e857d67316182373a6d21538'
   version '0.0.4'
   head 'https://github.com/tubbo/homer.git'
 
