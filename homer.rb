@@ -3,9 +3,9 @@ require 'formula'
 # Homer is a home directory manager.
 class Homer < Formula
   homepage 'https://github.com/tubbo/homer'
-  url 'https://github.com/tubbo/homer/archive/v0.0.4.tar.gz'
+  url 'https://github.com/tubbo/homer/archive/v0.0.5.tar.gz'
   sha1 'a651ddab88ee5310561d34dc6f6bc955eff78d75'
-  version '0.0.4'
+  version '0.0.5'
   head 'https://github.com/tubbo/homer.git'
 
   depends_on 'zsh'
