@@ -6,7 +6,7 @@ class Org < Formula
   desc "An org-mode for the rest of us"
   homepage "https://github.com/tubbo/org"
   url "https://github.com/tubbo/org.git"
-  sha256 "2180353940f8c9d5e902dfb8d90886804544c5bd"
+  sha256 "2d78672253551f460eff624e2d8ecf3312fe9f61"
   version '0.0.1'
 
   def install
@@ -18,6 +18,6 @@ class Org < Formula
   end
 
   def caveats
-    'Run `org sync` to sync all .org files with MobileOrg Dropbox'
+    'Run `org help` to see all the things you can do'
   end
 end
