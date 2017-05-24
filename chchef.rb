@@ -1,20 +1,21 @@
-# Documentation: http://docs.brew.sh/Formula-Cookbook.html
-#                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-
 class Chchef < Formula
   desc 'Use different Chef Server origins in your .chef folder'
   homepage 'https://tubbo.github.io/chchef'
-  url 'https://github.com/tubbo/chchef/archive/v0.1.0.zip'
-  version 'v0.1.0'
-  sha256 '24ffb7acaea1a9f7e42b82452f4907b0b90add419f0176ff3bfde153c1ac2ab7'
+  url 'https://github.com/tubbo/chchef/archive/v0.2.0.zip'
+  version 'v0.2.0'
+  sha256 'd39bd9dde317f501fc1e5f7146987b5040ac6e63a15436b9bdc9f4b3bfb17466'
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    system "make", "install"
+    system 'make', 'install', "PREFIX=#{prefix}"
   end
 
   test do
     system "source /usr/local/share/chchef/chchef.sh"
+  end
+
+  def caveats; <<-EOS.undent
+    Add the following to the ~/.bashrc or ~/.zshrc file:
+      source #{opt_share}/chchef/chchef.sh
+    EOS
   end
 end
