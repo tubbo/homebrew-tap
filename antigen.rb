@@ -5,7 +5,7 @@ class Antigen < Formula
 
   url "https://github.com/tubbo/antigen/archive/install-to-usr-local.tar.gz"
   version "1.1"
-  sha1 "39102dd6169d926b4e997445cc06bd45a90602c1"
+  sha256 "39102dd6169d926b4e997445cc06bd45a90602c1"
 
   depends_on 'zsh'
 
