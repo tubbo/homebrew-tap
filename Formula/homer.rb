@@ -3,9 +3,9 @@ require 'formula'
 # Homer is a home directory manager.
 class Homer < Formula
   homepage 'https://github.com/tubbo/homer'
-  url 'https://github.com/tubbo/homer/archive/v0.0.6.tar.gz'
-  sha256 'd9750f398a5a89ec87554530b34d8d30f1975c20916b0294e42f2c4c0f196b3f'
-  version '0.0.6'
+  url 'https://github.com/tubbo/homer/archive/v0.1.1.tar.gz'
+  sha256 '2fdcf7f2b8465f88f029a83e805ca1aec8ea5477'
+  version '0.1.1'
   head 'https://github.com/tubbo/homer.git'
 
   depends_on 'zsh'
@@ -16,7 +16,11 @@ class Homer < Formula
   end
 
   def caveats
-    'Run `homer init` to set up your home dir.'
+    <<~TEXT
+    Run `homer init [REPO]` to set up your home dir.
+
+    Or, run `homer` to see the full list of commands.
+    TEXT
   end
 
   test do
