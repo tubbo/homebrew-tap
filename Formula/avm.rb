@@ -1,8 +1,8 @@
 class Avm < Formula
   desc "Anything Version Manager"
   homepage "https://github.com/tubbo/avm"
-  url "https://github.com/tubbo/avm/archive/v0.1.1.tar.gz"
-  sha256 "240ff1544ab10f3d79402478fd1456fb528e5a62b99b4830227706d33c4889c0"
+  url "https://github.com/tubbo/avm/releases/download/v0.2.0/avm-0.2.0.tar.gz"
+  sha256 "63b982cd039df0eade884433dc8a109084bcc65bb96f72e6bed43d928cfc198e"
 
   head "https://github.com/tubbo/avm.git"
 
