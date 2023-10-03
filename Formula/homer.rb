@@ -3,8 +3,8 @@ require 'formula'
 # Homer is a home directory manager.
 class Homer < Formula
   homepage 'https://github.com/tubbo/homer'
-  url 'https://github.com/tubbo/homer/archive/v0.1.1.tar.gz'
-  sha256 'c10a6eece7546254f35c30825249c0e9a270f522b8e44a6bfa87a50f47c5fcbc'
+  url 'https://github.com/tubbo/homer/archive/v0.1.2.tar.gz'
+  sha256 '88032621648b0b3f2e420b5b3e33b3753fadedec435b9da9f500d5a98c78b0f0'
   version '0.1.1'
   head 'https://github.com/tubbo/homer.git'
 
